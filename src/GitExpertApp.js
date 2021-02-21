@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import AddCategory from './components/AddCategory';
 import GridGif from './components/GridGif';
 
-const GitExpertApp = () => {
-	const [categorias, setCategorias] = useState(['Terror']);
+const GitExpertApp = ({ defaultCatg = [] }) => {
+	const [categorias, setCategorias] = useState(defaultCatg);
 	return (
 		<>
 			<h2>Git Expert App</h2>

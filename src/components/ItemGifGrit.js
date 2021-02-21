@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const ItemGifGrit = ({ title, url }) => {
 	return (
@@ -9,4 +10,8 @@ const ItemGifGrit = ({ title, url }) => {
 	);
 };
 
+ItemGifGrit.propTypes = {
+	title: PropTypes.string.isRequired,
+	url: PropTypes.string.isRequired,
+};
 export default ItemGifGrit;
